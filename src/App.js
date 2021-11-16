@@ -1,9 +1,15 @@
+import { useEffect, useState } from 'react';
 import "./App.css";
 
+
 function App() {
+
+
+
+
     return (
         <div className="App">
-            <h1>Second Website</h1>
+            <p>Second Website</p>
         </div>
     );
 }
