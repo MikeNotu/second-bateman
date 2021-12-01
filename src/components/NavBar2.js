@@ -68,7 +68,7 @@ const NavBar2 = (props) => {
                   My GitHub
                 </DropdownItem>
                 <DropdownItem
-                  href="https://github.com/MikeNotu/chess-champions"
+                  href="https://github.com/MikeNotu/second-bateman"
                   className="dark-text"
                 >
                   This Project's Repository
