@@ -2,17 +2,71 @@ body {
     /* background: #141E30;  
 background: -webkit-linear-gradient(to right, #243B55, #141E30);  
 background: linear-gradient(to right, #243B55, #141E30); */
-
-}
-.material-icons {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    background-color: purple;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar-color{
+
+.navbar-custom{
+    /* display: flex;
+    align-content: center;
+    justify-content: center; */
     background: rgb(125,114,245);
     background: linear-gradient(90deg, rgba(125,114,245,1) 13%, rgba(83,131,249,1) 41%, rgba(27,154,254,1) 85%);
+    padding: 1.5em;
+}
+
+.nav-text{
+    font-size: 1.3em;
+    margin-right: 2em;
+}
+
+.nav-text:hover{
+    font-weight:500;
+
+}
+
+.pulse:hover{
+    /* width: 70px; */
+    /* height: 70px; */
+    /* background-color: red; */
+    border-radius: 50%;
+    /* position: relative; */
+    animation: animate .5s ease-in
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(1, 81, 255, 0.35), 0 0 0 0 rgba(1, 196, 255, 0.3)
+    }
+
+    80% {
+        box-shadow: 0 0 0 50px rgb(255, 109, 74, 0), 0 0 0 30px rgb(255, 109, 74, 0)
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(255, 109, 74, 0), 0 0 0 30px rgb(255, 109, 74, 0)
+    }
+}
+
+
+
+.flex-test{
+    display: flex;
+    /* justify-content: center; */
+    justify-content:space-around;
+
+}
+
+.logo-text{
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none !important;
+    
+    /* font-weight: bolder; */
+}
+
+.logo-text:hover{
+    color: #fff !important;
+    font-weight:500;
+  
 }

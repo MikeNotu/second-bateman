@@ -22,33 +22,42 @@ const NavBar2 = (props) => {
 
   return (
     <div>
-      <Navbar light expand="md" className="navbar navbar-expand-lg navbar-dark bg-dark p-3 navbar-color">
-        <NavbarBrand href="/chess-champions/">
-          &nbsp;&nbsp;ChessChampions
+      <Navbar 
+      dark 
+      expand="md" 
+      className="navbar-custom" 
+    //   fixed="top"
+      >
+
+<div className="container-fluid flex-test">
+
+    <div>
+    <NavbarBrand className="container-fluid">
+    <Link to="/" className="logo-text pulse">Michael Bateman</Link>
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="https://bateman.studio/">My Website</NavLink>
+        <NavbarToggler onClick={toggle} />    </div>
+
+    <div className="">
+    <Collapse isOpen={isOpen} navbar>
+          <Nav  navbar>
+
+            <NavItem >
+            <Link to="/" className="nav-link text-white nav-text pulse" >Home</Link>
+            </NavItem>
+            <NavItem >
+            <Link to="/testo" className="nav-link text-white nav-text pulse" >Projects</Link>
+            </NavItem>
+            <NavItem >
+            <Link to="/testo" className="nav-link text-white nav-text pulse" >About Me</Link>
             </NavItem>
             <NavItem>
-            <li className="nav-item">
-                                <Link to="/testo" className="nav-link">Create Test</Link>
-                            </li>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://www.linkedin.com/in/michael-bateman-979695194/">
+              <NavLink href="https://www.linkedin.com/in/michael-bateman-979695194/" className="text-white nav-text pulse">
                 My LinkedIn
               </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="https://www.chess.com/news/view/published-data-api">
-                API Used
-              </NavLink>
-            </NavItem>
+
             <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
+              <DropdownToggle nav caret className="text-white nav-text pulse">
                 GitHub
               </DropdownToggle>
               <DropdownMenu right>
@@ -68,6 +77,11 @@ const NavBar2 = (props) => {
             </UncontrolledDropdown>
           </Nav>
         </Collapse>
+    </div>
+
+    </div>
+
+
       </Navbar>
     </div>
   )
